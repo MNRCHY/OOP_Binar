@@ -33,7 +33,7 @@ class Anjing extends Animal {
         this.pemilik = pemilik
     }
     introduction (){
-        console.log(`Halo, nama saya ${this.nama}, saya adalah seekor ${this.spesies}, saya tinggal di ${this.habitat}, pemilik saya bernama ${this.pemilik}`); 
+        console.log(`Halo, nama saya ${this.nama}, saya adalah seekor ${this.spesies}, saya tinggal di ${this.habitat}`); 
     }
     greetMaster(){
         console.log(`Halo ${this.pemilik}`);
