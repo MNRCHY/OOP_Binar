@@ -6,7 +6,7 @@ class Ship{
 
         draftTot = draft + crew * 1.5
 
-        if (draft < 20){
+        if (draftTot < 20){
             console.log("Banyak nih Muatannya");
             console.log(draft, crew, draftTot);
         } 
