@@ -1,20 +1,20 @@
 class Ship{
-    constructor(draft, crew, weight){
+    constructor(draft, crew, draftTot){
         this.draft = draft
         this.crew = crew
-        this.weight = weight
+        this.draftTot = draftTot
 
-        crew = 1.5 * draft
+        draftTot = draft + crew * 1.5
 
-        if (crew < 20){
+        if (draft < 20){
             console.log("Banyak nih Muatannya");
-            console.log(crew);
+            console.log(draft, crew, draftTot);
         } 
         else {
             console.log("Lebih banyak awak kapalnya");
-            console.log(crew);
+            console.log(draft, crew, draftTot);
         }
     }
 }
 
-const emptyShip = new Ship (10)
+const emptyShip = new Ship (10, 15)
