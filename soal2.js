@@ -35,6 +35,11 @@ class Anjing extends Animal {
     introduction (){
         console.log(`Halo, nama saya ${this.nama}, saya adalah seekor ${this.spesies}, saya tinggal di ${this.habitat}, pemilik saya bernama ${this.pemilik}`); 
     }
+    greetMaster(){
+        console.log(`Halo ${this.pemilik}`);
+    }
+
+
 }
 
 const hiu = new Hiu('Hiu', 'Ikan', 'Lautan');
@@ -45,6 +50,7 @@ kucing.introduction()
 
 const anjing = new Anjing('Anjing', 'Mamalia', 'Daratan', 'Wira');
 anjing.introduction()
+anjing.greetMaster()
 
 // console.info(hiu);
 // console.info(kucing);
